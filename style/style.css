@@ -1,0 +1,126 @@
+/* 
+    Esercizio n. 3
+    data: 29.01.2024
+*/
+
+
+/*  CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -------------------- end */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    margin: 0 auto;
+    background: linear-gradient(to top, transparent, rgba(0,0,0,0.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-image: url(../assets/pietragrande.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.button-save {
+    position: absolute;
+    background-color: red;
+    color: #ffffff;
+    top: -50px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: top 0.3s ease-in;
+    font-weight: 700;
+}
+
+.card:hover .button-save {
+    top: 10px;
+    cursor: pointer;
+}
+
+.button-save:hover {
+    opacity: 0.8;
+}
+
+.bottom {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    bottom: -50px;
+    text-align: center;
+    transition: bottom 0.3s ease-in;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.card:hover .bottom {
+    bottom: 10px;
+}
+
+.info {
+    width: 50%;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+    left: 10px;
+    margin: 0 auto;
+    transition: top 0.3s ease-in;
+}
+
+.update {
+    width: 15%;
+    right: 70px;
+}
+
+.more {
+    width: 15%; 
+    right: 10px;
+}
+
+.info,
+.update,
+.more {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+.card:hover .info,
+.update,
+.more {
+    cursor: pointer;
+}
+
+.info:hover,
+.update:hover,
+.more:hover {
+    opacity: 0.8;
+}
